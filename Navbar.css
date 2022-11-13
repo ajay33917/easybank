@@ -13,7 +13,7 @@ header {
     
 }
  .navbar {
-    background: black;
+    background: navy;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,6 @@ margin: auto;
 display: block;
 transition: 0.25s ease;
 }
-   
    .primary-button:hover {   
     opacity: 0.7;
    }
