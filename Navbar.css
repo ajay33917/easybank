@@ -42,7 +42,7 @@ header {
 
   .navbar-links a {
     display: block;
-    color: white;
+    color:black;
     text-decoration: none;
   }
   
@@ -50,6 +50,23 @@ header {
     font-size: 20px;
     color: #2bb7da;
   }
+  .toggle-button {    
+    right: 1rem;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 0 20px;
+    width: 30px;
+    height: 21px;
+}
+  .toggle-button span {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
   
    .primary-button {
 background: linear-gradient(to right, limegreen, #2bb7da); 
@@ -73,8 +90,40 @@ transition: 0.25s ease;
     .primary-button{
         display: none;
     }
+    }
+   
+    @media (max-width : 800px) {
+     
+  .navbar .navbar-links {
+    display:none;
+  }
+  .navbar-links{
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .toggle-button {
+    display: flex;
+  }
+  .navbar {
+   flex-direction: column;
+   align-items: flex-start;
+
+}
+.navbar-links.active {
+display: flex;
+  background: whitesmoke;
+  position: fixed;
+  width: 86%;
+  margin: 73px 32px 0px;
+  box-shadow: -9px 15px 21px black;
+  box-sizing: border-box;
+}
+}
+
     
-   }
+    
+   
 
 
 
